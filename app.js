@@ -1,54 +1,39 @@
-let ChineseZodiac=prompt("What year of Chinese Zodiac are you?")
-let numberInput=ChineseZodiac
-let numberResult=Number(ChineseZodiac) 
+console.log("It works")
+
+function parametarOne(object){
+    let result=object
+    console.log(result)
+    return result
+    
+}
+parametarOne(null)
 
 
+function parametarTwo(boolean){
+    let result1=boolean
+    console.log(result1)
+    return result1
+}
+parametarTwo(false)
 
-
-
-if  (numberInput <= 0) {
-    console.log("Rat");
-    
-} else if (numberInput <= 1) {
-    console.log("Ox");
-    
-}else if (numberInput <= 2)  {
-    console.log("Tiger");
-    
-} else if (numberInput <= 3) {
-    console.log("Rabbit");
-    
-}else if (numberInput <= 4) {
-    console.log("Dragon");
-    
-}else if (numberInput <= 5) {
-    console.log("Snake")
-}else if (numberInput <= 6) {
-    console.log("Horse")
-
-}else if (numberInput <= 7) {
-    console.log("Goat")
-    
-}else if (numberInput <= 8) {
-    console.log("Monkey")
-    
-}else if (numberInput <= 9) {
-    console.log("Rooster")
-
-    
-}else if (numberInput <= 10) {
-    console.log("Dog")
-    
-}else if (numberInput <= 11) {
-    console.log("Pig")
-}else  {
-
-    console.log("Try more times")
+function parametarTree(number){
+    let result3=number
+    console.log(result3)
+    return result3
 
 }
-    
+parametarTree(29)
 
-    
-    
+function parametarFour(string){
+let result4=string
+console.log(result4)
+return result4
+}
+parametarFour("Dejan")
 
-
+function parametarFive(undefined){
+    let result5=undefined
+    console.log(result5)
+    return result5
+}
+parametarFive()
