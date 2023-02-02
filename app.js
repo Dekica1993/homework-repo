@@ -1,97 +1,58 @@
-// const nameEl=document.querySelector("name")
-// const cardEl=document.querySelector("fake-card")
-
-// const fetchName=("https://fakestoreapi.com/products")
+console.log("it works")
 
 
-// function fetchProducts(){
-//     fetch(fetchName)
-//     .then (function(res){
-//         return res.json()
-//     })
-//     .then(function(data){
-//         renderProducts(nameEl,data)
-        
-           
-//     })
-  
+apiBtn=document.querySelector(".btn")
+homeBtn=document.querySelector(".home-btn")
+aboutBtn=document.querySelector(".about-btn")
+mainEl=document.querySelector(".main")
+dailyCard=document.querySelector(".daily-card")
+
+
+const WETH_API="https://api.openweathermap.org/data/3.0/onecall?lat=41.99646&lon=21.43141&units=metric&exclude=minutely&appid=83cf676a48739fd57b023a3d32f2ef8b"
+
+function fetchWetherApi(){
    
-
-// }
-
-// fetchProducts()
-// function renderProducts(nameEl,cardEl){
-//     let productsHTML=""
-//     for(let products of nameEl){
-//         productsHTML.innerHTML+= `<div class="fake-card"></div>
-//         <h3>${products.id} ${products.title}</h3>`
-        
-//     }    
-//     nameEl.innerHTML=productsHTML 
-//     }
-
-// const sayHello=()=>{
-//     console.log("hello from the arrow funcion")
-// }
-
-// sayHello()
-
-// const prinMoney=money=>`You have a total of ${money}$`
-
-// console.log(prinMoney(10000))
-
-
-// function makeDigitsNumb(numOne){
-//     return numOne
-// }
-// console.log(makeDigitsNumb(30))
-
-// function getNumberEven(operator,numOne,numTwo){
-//     if(operator==="even"){
-//       return  (numOne,numTwo)
-//     }
-//     if(operator==="odd"){
-//         return (numOne,numTwo)
-//     }
-// }
-// console.log(getNumberEven("even",2,4))
-// console.log(getNumberEven("odd",1,3))
-
-// function returnNumber(operator){
-//     if(operator>0){
-//         return ("positive")
-//     }
-//     if(operator<0){
-//         return ("negative")
-//     }
+        fetch(WETH_API)
+        .then(res=>res.json())
+        .then(data=>{
+            console.log(data) 
+            renderHomePage(data) 
+            renderHomePageEl(daily.data)
+        })
     
-
-
-// }
-// console.log(returnNumber(4))
-// console.log(returnNumber(-8))
-
-// function getNumberStats(){
-//     makeDigitsNumb()
-//     getNumberEven()
-//     returnNumber()  
-// }
-// console.log(getNumberStats(-25))
-
-
-const RAW_GITHUB="https://raw.githubusercontent.com/sedc-codecademy/skwd9-04-ajs/main/Samples/students_v2.json"
-
-fetch("https://raw.githubusercontent.com/sedc-codecademy/skwd9-04-ajs/main/Samples/students_v2.json")
-.then(res=>res.json())
-.then(data=>app(data))
-const app=data=>{
-    const studentFilter=data.filter(student=>student.averageGrade>=3)
-    console.log(studentFilter)
-    const studentFemale=data.map(student=>{
-       console.log(`${data.firstName} ${} `)
-    })
-    console.log(studentFemale)
 }
 
 
+
+
+const renderHomePage=date=>{
+    mainEl.innerHTML=""
+    mainEl.innerHTML=`<h1>Today is ${new Date(date.current.dt*1000).toLocaleDateString("rs")}</h1>
+    <h2>Temperature is:${date.current.temp}</h2>
+    <h3>Feels like:${date.current.feels_like}</h3>
+    <img src="https://openweathermap.org/img/wn/${date.current.weather[0].icon}@2x.png"/>
+    <h4>Description is:${date.current.weather[0].description}`
+   
+}
+
+const renderAboutPage=mainEl=>{
+    mainEl.innerHTML=""
+    mainEl.innerHTML=`<h1>This is the About page</h1>
+    <h2>`
+}
+
+homeBtn.addEventListener("click",()=>{
+    fetchWetherApi()
+})
+aboutBtn.addEventListener("click",()=>{
+    renderAboutPage(mainEl)
+})
+
+function renderHomePageEl(daily){
+dailyCard.innerHTML=`<h1>${date.daily.dt}</h1>
+<h2>${date.daily.temp.max}</h2>`
+for (let day of daily){
+   
+}
+}
 
