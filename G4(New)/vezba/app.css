@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: lightsalmon;
+    display: flex;
+    justify-content: center;
+    margin: 250px;
+
+
+
+}
+nav ul{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    
+
+    
+}
