@@ -1,0 +1,29 @@
+body{
+    text font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+*{
+    background-color: lightgrey;
+}
+strong{
+    background-color: lightpink;
+}
+p{
+    color: darkblue;
+}
+ul,ol{
+    color: darkred;
+}
+.documentation-container{
+    background-color: gold;
+}
+.documentation p{
+    background-color: lightyellow;
+}
+#documentation-heading{
+    color: darkblue;
+    
+}
+h3,ul{
+    background-color: lightblue;
+}
