@@ -1,0 +1,15 @@
+/Users/dejanmladenov/Desktop/homework-class03 /SwapNumbers/StudentGroup/bin/Debug/net6.0/StudentGroup
+/Users/dejanmladenov/Desktop/homework-class03 /SwapNumbers/StudentGroup/bin/Debug/net6.0/StudentGroup.deps.json
+/Users/dejanmladenov/Desktop/homework-class03 /SwapNumbers/StudentGroup/bin/Debug/net6.0/StudentGroup.runtimeconfig.json
+/Users/dejanmladenov/Desktop/homework-class03 /SwapNumbers/StudentGroup/bin/Debug/net6.0/StudentGroup.dll
+/Users/dejanmladenov/Desktop/homework-class03 /SwapNumbers/StudentGroup/bin/Debug/net6.0/StudentGroup.pdb
+/Users/dejanmladenov/Desktop/homework-class03 /SwapNumbers/StudentGroup/obj/Debug/net6.0/StudentGroup.csproj.AssemblyReference.cache
+/Users/dejanmladenov/Desktop/homework-class03 /SwapNumbers/StudentGroup/obj/Debug/net6.0/StudentGroup.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dejanmladenov/Desktop/homework-class03 /SwapNumbers/StudentGroup/obj/Debug/net6.0/StudentGroup.AssemblyInfoInputs.cache
+/Users/dejanmladenov/Desktop/homework-class03 /SwapNumbers/StudentGroup/obj/Debug/net6.0/StudentGroup.AssemblyInfo.cs
+/Users/dejanmladenov/Desktop/homework-class03 /SwapNumbers/StudentGroup/obj/Debug/net6.0/StudentGroup.csproj.CoreCompileInputs.cache
+/Users/dejanmladenov/Desktop/homework-class03 /SwapNumbers/StudentGroup/obj/Debug/net6.0/StudentGroup.dll
+/Users/dejanmladenov/Desktop/homework-class03 /SwapNumbers/StudentGroup/obj/Debug/net6.0/refint/StudentGroup.dll
+/Users/dejanmladenov/Desktop/homework-class03 /SwapNumbers/StudentGroup/obj/Debug/net6.0/StudentGroup.pdb
+/Users/dejanmladenov/Desktop/homework-class03 /SwapNumbers/StudentGroup/obj/Debug/net6.0/StudentGroup.genruntimeconfig.cache
+/Users/dejanmladenov/Desktop/homework-class03 /SwapNumbers/StudentGroup/obj/Debug/net6.0/ref/StudentGroup.dll
